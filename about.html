@@ -9,50 +9,41 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     .about-hero {
-      min-height: 70vh;
-      background: linear-gradient(to bottom, rgba(22,51,0,0.6) 0%, rgba(22,51,0,0.92) 100%), url(images/me_surf_2.jpg) center 40%/cover no-repeat;
+      min-height: 80vh;
+      background: linear-gradient(to bottom, rgba(14,26,10,0.3) 0%, rgba(14,26,10,0.85) 100%),
+                  url(images/me_surf_2.jpg) center 35% / cover no-repeat;
       display: flex; flex-direction: column; justify-content: flex-end;
       padding: 0 4rem 5rem;
-      position: relative;
     }
     .about-hero h1 {
-      font-size: clamp(3rem, 6vw, 5rem);
+      font-size: clamp(2.8rem, 5.5vw, 4.5rem);
       font-weight: 700; color: #fff;
-      line-height: 1.05; letter-spacing: -0.03em;
-      max-width: 800px; margin-bottom: 1.5rem;
+      line-height: 1.08; letter-spacing: -0.03em;
+      max-width: 720px; margin-bottom: 1.25rem;
     }
-    .about-hero .lead { color: rgba(255,255,255,0.7); max-width: 600px; }
-    .photo-grid {
+    .about-hero .lead { color: rgba(255,255,255,0.7); max-width: 560px; }
+
+    .skate-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
-      margin: 3rem 0;
+      margin-top: 2.5rem;
+      align-items: start;
     }
-    .photo-grid img {
-      width: 100%; height: 320px;
-      object-fit: cover;
+    .skate-grid img {
+      width: 100%;
+      height: auto;
       border-radius: var(--radius);
-    }
-    .photo-grid .tall {
-      grid-row: span 2;
-      height: 100%;
-      min-height: 658px;
+      display: block;
     }
     .photo-caption {
       font-size: 0.8rem; color: var(--text-muted);
-      margin-top: 0.5rem; line-height: 1.5;
+      margin-top: 0.6rem; line-height: 1.5;
     }
-    .skate-pair {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-    }
-    .skate-pair img {
-      width: 100%; height: 380px; object-fit: cover; border-radius: var(--radius);
-    }
+
     @media (max-width: 768px) {
       .about-hero { padding: 0 1.5rem 3rem; }
-      .photo-grid { grid-template-columns: 1fr; }
-      .photo-grid .tall { min-height: 320px; }
-      .skate-pair { grid-template-columns: 1fr; }
+      .skate-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -70,100 +61,86 @@
   </ul>
 </nav>
 
+<!-- HERO -->
 <header class="about-hero">
-  <p style="color:rgba(159,232,112,0.8); font-size:0.8rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:1rem;">About me</p>
-  <h1>I study humans for a living.<br>Turns out I am one.</h1>
-  <p class="lead">Staff Researcher · Outdoor person · Surfer · Occasional disaster.</p>
+  <p style="color:rgba(159,232,112,0.85); font-size:0.8rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:1rem;">About me</p>
+  <h1>Francesca Zaninotto</h1>
+  <p class="lead">Staff / Principal UX Researcher. I've been doing this for over 20 years — and I still find it the most interesting job in the room.</p>
 </header>
 
+<!-- BIO -->
 <section>
   <div style="max-width:1200px; margin:0 auto;">
     <div class="content-row">
       <div>
         <p class="section-label">The work</p>
-        <h2>20+ years asking why people do the things they do.</h2>
-        <p style="color:var(--text-muted); line-height:1.8; font-size:1.05rem; margin-bottom:1.5rem;">I'm a Staff / Principal UX Researcher with a PhD in Cognitive Psychology and Behavioural Science. I've led research at Dow Jones (WSJ, Barron's, MarketWatch), King (Candy Crush), and Welltech — across everything from subscription retention to spending psychology to fraud prevention.</p>
-        <p style="color:var(--text-muted); line-height:1.8; font-size:1.05rem; margin-bottom:1.5rem;">My approach is mixed-methods, behavioural-science-informed, and genuinely cross-functional. I like problems where the data tells you <em>what</em> but not <em>why</em>. That's where research earns its place.</p>
-        <p style="color:var(--text-muted); line-height:1.8; font-size:1.05rem;">Right now I'm excited about Wise's Mitigation team — because financial decision-making under pressure is exactly the kind of research I've been doing for a decade, just in different contexts.</p>
+        <h2>Research that changes things.</h2>
+        <p style="color:var(--text-muted); line-height:1.85; font-size:1.05rem; margin-bottom:1.5rem;">I'm a Staff / Principal UX Researcher with a background in Cognitive Psychology and Behavioural Science. I've led research programmes at Dow Jones (WSJ, Barron's, MarketWatch), King (Candy Crush Soda), and Welltech — across subscription products, gaming, and consumer behaviour.</p>
+        <p style="color:var(--text-muted); line-height:1.85; font-size:1.05rem;">My work is mixed-methods and behavioural-science-informed. I'm drawn to problems where the data tells you <em>what</em> but not <em>why</em> — and where the answer actually changes something.</p>
       </div>
       <div>
-        <img src="images/me_beach_baby.jpg" alt="Francesca at the beach with baby on back, waves behind" style="width:100%; border-radius:var(--radius); object-fit:cover; max-height:540px;" />
+        <img src="images/me_beach_baby.jpg" alt="Francesca at the beach in Portugal with baby Carlotta in a carrier on her back" style="width:100%; border-radius:var(--radius); object-fit:cover; max-height:560px;" />
         <p class="photo-caption">Beach in Portugal. Yes, I do adventure hikes with a baby on my back. Efficiency.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- SKATING + BROKEN ARM -->
 <section style="background:var(--surface-2);">
   <div style="max-width:1200px; margin:0 auto;">
     <p class="section-label">Outside work</p>
-    <h2>I love being outdoors. The outdoors has mixed feelings about me.</h2>
-    <p class="lead">I surf, skate, hike, and squeeze through caves with babies on my back. I have strong convictions about all of this. My body has other opinions.</p>
+    <h2>I love extreme sports.<br>Extreme sports don't love me back.</h2>
+    <p class="lead">I surf, skate, hike, and generally say yes to things that require a waiver. Results vary.</p>
 
-    <div style="margin-top:3rem;">
-      <div class="skate-pair">
-        <div>
-          <img src="images/me_skate_1.jpg" alt="Francesca skating at a skatepark" />
-          <p class="photo-caption">Skating. Looking confident. Fully in control.</p>
-        </div>
-        <div>
-          <img src="images/me_skate_2.jpg" alt="Francesca skating, wide shot of skatepark" />
-          <p class="photo-caption">Still skating. Still fine. Three hours to go.</p>
-        </div>
+    <div class="skate-grid">
+      <div>
+        <img src="images/me_skate_1.jpg" alt="Francesca skating at a skatepark, crouched low on a board" />
+        <p class="photo-caption">Skating. Fully in control. Nothing to worry about.</p>
       </div>
+      <div>
+        <img src="images/me_skate_2.jpg" alt="Francesca skating at a skatepark, wide shot" />
+        <p class="photo-caption">Still fine. This was taken three hours before the next photo.</p>
+      </div>
+    </div>
 
-      <div style="margin-top:1rem; background:var(--wise-navy); border-radius:var(--radius); padding:2rem; display:flex; gap:2rem; align-items:center; flex-wrap:wrap;">
-        <div style="flex:1; min-width:200px;">
-          <img src="images/me_broken_arm.jpg" alt="Francesca with broken arm in a sling, laughing with a beer" style="width:100%; border-radius:8px; object-fit:cover; max-height:340px;" />
-        </div>
-        <div style="flex:2; min-width:260px;">
-          <p style="color:rgba(159,232,112,0.8); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:1rem;">Three hours later</p>
-          <h3 style="color:#fff; font-size:1.6rem; line-height:1.2; margin-bottom:1rem;">"I love extreme sports. Extreme sports don't love me back."</h3>
-          <p style="color:rgba(255,255,255,0.65); line-height:1.75;">To be fair, I'm still smiling. And I still have a beer. So in terms of resilience metrics, I'd call it a win.</p>
-        </div>
+    <div style="margin-top:1.5rem; display:grid; grid-template-columns:auto 1fr; gap:2rem; align-items:center; background:var(--wise-navy); border-radius:var(--radius); padding:2rem; flex-wrap:wrap;">
+      <img src="images/me_broken_arm_crop.jpg" alt="Francesca laughing with a broken arm in a sling" style="width:260px; border-radius:8px; object-fit:cover; max-height:320px;" />
+      <div>
+        <p style="color:rgba(159,232,112,0.8); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem;">Three hours later</p>
+        <h3 style="color:#fff; font-size:1.5rem; line-height:1.25; margin-bottom:0.75rem;">Still laughing, though.</h3>
+        <p style="color:rgba(255,255,255,0.6); line-height:1.75; font-size:0.95rem;">The broken arm didn't change the answer to "want to go skating?" It just added a data point.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ADVENTURES -->
 <section>
-  <div style="max-width:1200px; margin:0 auto;">
-    <p class="section-label">In the water</p>
-    <h2>Surfing is the one that actually loves me back.</h2>
-    <p class="lead">It's the sport where reading conditions, staying patient, and committing fully at the right moment all matter. Researchers understand this.</p>
-
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:3rem;">
-      <img src="images/me_surf_1.jpg" alt="Francesca surfing, black and white — emerging from a wave" style="width:100%; border-radius:var(--radius); object-fit:cover; height:460px;" />
-      <img src="images/me_surf_2.jpg" alt="Francesca surfing, black and white — riding a wave crouched low" style="width:100%; border-radius:var(--radius); object-fit:cover; height:460px;" />
-    </div>
-  </div>
-</section>
-
-<section style="background:var(--surface-2);">
   <div style="max-width:1200px; margin:0 auto;">
     <p class="section-label">Adventures</p>
     <h2>If there's a cave, I'm going in.</h2>
-
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:3rem;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2.5rem;">
       <div>
-        <img src="images/me_cave.jpg" alt="Francesca crawling through a cave tunnel with a backpack and headtorch" style="width:100%; border-radius:var(--radius); object-fit:cover; height:420px;" />
-        <p class="photo-caption">A tunnel that definitely looked bigger on the map. (I made it.)</p>
+        <img src="images/me_cave.jpg" alt="Francesca squeezing through a narrow cave tunnel with a headtorch and big backpack, smiling" style="width:100%; border-radius:var(--radius); object-fit:cover; height:440px;" />
+        <p class="photo-caption">A passage that definitely looked bigger on the map.</p>
       </div>
       <div>
-        <img src="images/me_rocks_baby.jpg" alt="Francesca navigating a rocky passage with a baby on her back" style="width:100%; border-radius:var(--radius); object-fit:cover; height:420px;" />
-        <p class="photo-caption">This is called "consulting the stakeholder on route decisions." Baby was enthusiastic.</p>
+        <img src="images/me_rocks_baby.jpg" alt="Francesca navigating a rocky gap with baby Carlotta in a carrier on her back, both smiling" style="width:100%; border-radius:var(--radius); object-fit:cover; height:440px;" />
+        <p class="photo-caption">Consulting the co-researcher on route options. She was enthusiastic.</p>
       </div>
     </div>
   </div>
 </section>
 
-<div style="display:flex; justify-content:center; padding:4rem 4rem 5rem; background:var(--wise-navy);">
-  <div style="text-align:center; max-width:600px;">
+<!-- BACK TO WORK -->
+<div style="display:flex; justify-content:center; padding:4rem; background:var(--wise-navy);">
+  <div style="text-align:center; max-width:560px;">
     <p style="color:rgba(159,232,112,0.8); font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:1.5rem;">Back to the work</p>
     <h2 style="color:#fff; margin-bottom:2rem;">Two case studies, both shipped.</h2>
     <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
       <a href="case-study-1.html" style="display:inline-flex; align-items:center; gap:0.5rem; background:var(--wise-green); color:var(--wise-navy); padding:0.75em 1.5em; border-radius:999px; text-decoration:none; font-weight:700; font-size:0.9rem;">Study 1 · Yoga Go</a>
-      <a href="case-study-2.html" style="display:inline-flex; align-items:center; gap:0.5rem; background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2); padding:0.75em 1.5em; border-radius:999px; text-decoration:none; font-weight:600; font-size:0.9rem;">Study 2 · King / Candy Crush</a>
+      <a href="case-study-2.html" style="display:inline-flex; align-items:center; gap:0.5rem; background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.2); padding:0.75em 1.5em; border-radius:999px; text-decoration:none; font-weight:600; font-size:0.9rem;">Study 2 · Candy Crush Soda</a>
     </div>
   </div>
 </div>
