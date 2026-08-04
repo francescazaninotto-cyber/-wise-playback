@@ -134,26 +134,34 @@
     <h2>Three distinct exit patterns.</h2>
     <p class="lead">Rather than treating all churned users the same, I segmented by depth of engagement before churn — which revealed fundamentally different failure modes.</p>
 
-    <div class="insight-grid">
-      <div class="insight-card">
-        <div class="ic-icon">🏃</div>
-        <h4>Group 1 · Low-Engaged Casual (40.7%)</h4>
-        <p>Used once or twice, then left. Primary failure: onboarding confusion and unmet first-session expectations. Never reached the core value.</p>
+    <div class="content-row" style="margin-top:3rem;">
+      <div>
+        <div class="insight-grid" style="margin:0; grid-template-columns:1fr;">
+          <div class="insight-card">
+            <div class="ic-icon">🏃</div>
+            <h4>Group 1 · Low-Engaged Casual (40.7%)</h4>
+            <p>Used once or twice, then left. Primary failure: onboarding confusion and unmet first-session expectations. Never reached the core value.</p>
+          </div>
+          <div class="insight-card">
+            <div class="ic-icon">🔄</div>
+            <h4>Group 2 · High-Engaged Casual (33.3%)</h4>
+            <p>Used 3+ times before churning. Primary failure: repetitive content, no progress feedback, no motivation loop. Got to the product but lost the thread.</p>
+          </div>
+          <div class="insight-card">
+            <div class="ic-icon">💪</div>
+            <h4>Group 3 · Power Users (25.9%)</h4>
+            <p>Used consistently for a month or more. Primary failure: no personalisation growth, content ceiling hit. Invested users who felt the product stopped growing with them.</p>
+          </div>
+        </div>
       </div>
-      <div class="insight-card">
-        <div class="ic-icon">🔄</div>
-        <h4>Group 2 · High-Engaged Casual (33.3%)</h4>
-        <p>Used 3+ times before churning. Primary failure: repetitive content, no progress feedback, no motivation loop. Got to the product but lost the thread.</p>
-      </div>
-      <div class="insight-card">
-        <div class="ic-icon">💪</div>
-        <h4>Group 3 · Power Users (25.9%)</h4>
-        <p>Used consistently for a month or more. Primary failure: no personalisation growth, content ceiling hit. Invested users who felt the product stopped growing with them.</p>
+      <div>
+        <img src="images/yoga_18.jpg" alt="Over-40 participant group — older women representing the key user segment" style="width:100%; border-radius:var(--radius); object-fit:cover; max-height:480px;" />
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.75rem;">The over-40 segment — 33/54 participants — drove the most actionable insights. Holistic wellness goals, structural guidance needs, often first-time digital fitness users.</p>
       </div>
     </div>
 
     <div style="margin-top:3rem; background:#fff; border-radius:var(--radius); padding:2rem; border:1px solid var(--border);">
-      <h4 style="margin-bottom:1.5rem; font-size:1rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.07em; font-size:0.75rem;">Age split across all segments</h4>
+      <h4 style="margin-bottom:1.5rem; font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.07em;">Age split across all segments</h4>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
         <div>
           <div style="font-size:1.5rem; font-weight:700; color:var(--wise-green-dark);">21/54</div>
@@ -225,7 +233,7 @@
   <div style="max-width:1200px; margin:0 auto;">
     <p class="section-label">Behavioural Science Layer</p>
     <h2>It wasn't churn. It was expectation violation.</h2>
-    <p class="lead" style="max-width:680px;">Using my PhD background in cognitive psychology, I reframed the findings not as usability failures but as <strong style="color:var(--wise-green);">expectation-reality gaps</strong> — a well-documented trigger for disengagement across consumer behaviour research.</p>
+    <p class="lead" style="max-width:680px;">The findings reframed as <strong style="color:var(--wise-green);">expectation-reality gaps</strong> — a well-documented trigger for disengagement across consumer behaviour research — rather than a list of usability failures. That framing changed how the product team responded.</p>
     <div class="rec-grid" style="margin-top:3rem;">
       <div class="rec-card">
         <div class="rc-num">Finding A</div>
@@ -246,41 +254,78 @@
   </div>
 </div>
 
-<!-- RECOMMENDATIONS -->
+<!-- APP SCREENSHOT VISUAL -->
+<section style="background:var(--surface-2);">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="content-row">
+      <div>
+        <p class="section-label">From the product</p>
+        <h2>The app experience we were studying.</h2>
+        <p class="lead">Sessions ran remotely. Participants shared their screens — walking us through their own navigation paths, which exposed friction points no survey would have surfaced.</p>
+        <p style="margin-top:1rem; color:var(--text-muted); line-height:1.75;">The navigation study revealed that 34/54 users couldn't find missed workouts or restart a plan — a critical re-entry failure visible in session recordings but invisible in analytics.</p>
+      </div>
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <img src="images/yoga_17.jpg" alt="Yoga Go app screens showing content and navigation" style="width:100%; border-radius:var(--radius); object-fit:cover;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT — NIKKI ANDERSON FRAMEWORK -->
 <section>
   <div style="max-width:1200px; margin:0 auto;">
-    <p class="section-label">Recommendations</p>
-    <h2>What we shipped, and what it changed.</h2>
+    <p class="section-label">Impact · Nikki Anderson Framework</p>
+    <h2>Three types of research success.</h2>
+    <p class="lead">Every study should be able to answer: what changed because of this research? Here's what changed across product, strategy, and operations.</p>
 
-    <div class="impact-list">
-      <div class="impact-item">
-        <div class="impact-metric">+18%</div>
-        <div class="impact-text">
-          <strong>Onboarding completion rate</strong>
-          <span>Post-quiz recommendations redesigned to visibly connect to user answers. Added explicit first-session path with one clear CTA.</span>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem; margin-top:3rem;">
+
+      <div style="background:#fff; border-radius:var(--radius); padding:2rem; border:1px solid var(--border); border-top:3px solid var(--wise-green-dark);">
+        <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--wise-green-dark); margin-bottom:1rem;">1 · Direct Product Impact</p>
+        <h4 style="font-size:1rem; font-weight:600; margin-bottom:1rem;">Product changes shipped from findings</h4>
+        <div class="impact-list" style="margin:0;">
+          <div class="impact-item" style="padding:0.75rem 0;">
+            <div class="impact-metric" style="font-size:1.4rem; min-width:60px;">+18%</div>
+            <div class="impact-text">
+              <strong>Onboarding completion</strong>
+              <span>Quiz results now visibly connected to recommendations. One clear CTA on first session.</span>
+            </div>
+          </div>
+          <div class="impact-item" style="padding:0.75rem 0;">
+            <div class="impact-metric" style="font-size:1.4rem; min-width:60px;">+12%</div>
+            <div class="impact-text">
+              <strong>30-day retention</strong>
+              <span>Streak tracking, progress feedback, and re-entry flow added.</span>
+            </div>
+          </div>
+          <div class="impact-item" style="padding:0.75rem 0; border-bottom:none;">
+            <div class="impact-metric" style="font-size:1.4rem; min-width:60px;">+15%</div>
+            <div class="impact-text">
+              <strong>Upsell conversion</strong>
+              <span>Trial-to-paid redesigned around goal achievement, not time pressure.</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="impact-item">
-        <div class="impact-metric">+12%</div>
-        <div class="impact-text">
-          <strong>30-day retention</strong>
-          <span>Reminders, streak tracking, and progress feedback added. Power users given a content progression system.</span>
-        </div>
+
+      <div style="background:#fff; border-radius:var(--radius); padding:2rem; border:1px solid var(--border); border-top:3px solid #2563eb;">
+        <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#2563eb; margin-bottom:1rem;">2 · Strategic Influence</p>
+        <h4 style="font-size:1rem; font-weight:600; margin-bottom:1rem;">Research shifted roadmap priorities</h4>
+        <ul style="padding-left:1.2rem; color:var(--text-muted); font-size:0.9rem; line-height:1.8;">
+          <li>Over-40 segment elevated to a priority cohort — first dedicated research strand.</li>
+          <li>Lifecycle Marketing personalised push strategy around the 3 behavioural segments identified in research — <strong>+17% weekly active users.</strong></li>
+          <li>Insights-to-Action cross-functional squad (Research, PM, Data, Lifecycle) established as ongoing model.</li>
+          <li>Re-entry flow added to product roadmap based on Power User insight — previously not on anyone's backlog.</li>
+        </ul>
       </div>
-      <div class="impact-item">
-        <div class="impact-metric">+15%</div>
-        <div class="impact-text">
-          <strong>Upsell conversion</strong>
-          <span>Insights-to-Action squad (cross-functional: Research, PM, Data, Lifecycle) used findings to redesign the trial-to-paid moment around goal achievement, not time pressure.</span>
-        </div>
+
+      <div style="background:#fff; border-radius:var(--radius); padding:2rem; border:1px solid var(--border); border-top:3px solid #7c3aed;">
+        <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#7c3aed; margin-bottom:1rem;">3 · Operational / ResOps Impact</p>
+        <h4 style="font-size:1rem; font-weight:600; margin-bottom:1rem;">Heard as AI interview infrastructure</h4>
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.75; margin-bottom:1rem;">Running 48 interviews via <strong>Heard</strong> (AI-moderated) in parallel validated a new research workflow for the team. Turnaround from recruitment to thematic synthesis: under 2 weeks, where equivalent human-moderated studies took 6–8 weeks.</p>
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.75;">The hybrid model — AI for breadth, researcher for depth — became a template adopted across the Welltech research programme.</p>
       </div>
-      <div class="impact-item">
-        <div class="impact-metric">+17%</div>
-        <div class="impact-text">
-          <strong>Weekly active users</strong>
-          <span>Lifecycle Marketing used behavioural triggers identified in research to personalise push notification strategy — each segment got messages aligned to their motivation pattern.</span>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
