@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study 1 — Unlocking Retention | Francesca Zaninotto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="wise-flag"><span>W</span></div>
+    Francesca Zaninotto · Design Research
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="case-study-2.html">Study 2 →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="cs-hero cs1-hero">
+  <a href="index.html" class="back-btn">← All case studies</a>
+  <p class="section-label">Case Study 01 · Generative Research · Welltech, 2025</p>
+  <h1>Unlocking Retention:<br>Understanding Why Users Leave</h1>
+  <p class="lead">A mixed-methods study with 54 churned users of Yoga Go — combining AI-conducted interviews, in-depth 1:1s, and product analytics — to understand what drives disengagement and what brings users back.</p>
+  <div class="hero-chips">
+    <span class="chip">Generative</span>
+    <span class="chip">Mixed Methods</span>
+    <span class="chip">54 Participants</span>
+    <span class="chip">Shipped</span>
+    <span class="chip">+18% Onboarding</span>
+    <span class="chip">+12% 30-day Retention</span>
+  </div>
+</header>
+
+<!-- THE PROBLEM -->
+<section>
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="content-row">
+      <div>
+        <p class="section-label">The Problem</p>
+        <h2>A 50M-download app losing users faster than it could acquire them.</h2>
+        <p class="lead">Yoga Go had strong top-of-funnel performance but chronic early churn. The product team had quantitative signals — drop-off at day 3, day 7, day 30 — but no behavioural explanation for why.</p>
+        <p style="margin-top:1rem; color: var(--text-muted); line-height:1.75;">The business question was simple: <em>what's breaking?</em> The research question was harder: are users leaving because of the product, their expectations, their habits, or their lives?</p>
+      </div>
+      <div>
+        <div class="stat-grid" style="grid-template-columns:1fr 1fr; margin:0;">
+          <div class="stat-box">
+            <div class="num">50M+</div>
+            <div class="label">Downloads globally</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">3</div>
+            <div class="label">Distinct churn moments we needed to explain</div>
+          </div>
+          <div class="stat-box" style="grid-column: span 2;">
+            <div class="num">0</div>
+            <div class="label">Prior qual research on churned users — they had never been spoken to</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section style="background: var(--surface-2);">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label">Methodology</p>
+    <h2>Why mixed methods?</h2>
+    <p class="lead">Quantitative data told us <em>when</em> users left. Qualitative research told us <em>why</em>. I designed a two-phase study to triangulate both.</p>
+
+    <div class="method-row">
+      <div class="method-box">
+        <h5>Phase 1 · AI Interviews</h5>
+        <p><strong>48 interviews</strong> conducted via Heard (AI-moderated). Rapid, scalable, consistent. Used to identify themes and segment patterns across all three user groups.</p>
+      </div>
+      <div class="method-box">
+        <h5>Phase 2 · 1:1 Depth</h5>
+        <p><strong>6 in-depth interviews</strong> with a purposive subsample — one from each behavioural segment, chosen to probe the most interesting tensions from Phase 1.</p>
+      </div>
+      <div class="method-box">
+        <h5>Segmentation</h5>
+        <p>Users recruited and segmented by engagement level: <strong>Low-Engaged Casual</strong> (1–2 sessions), <strong>High-Engaged Casual</strong> (3+ sessions), and <strong>Power Users</strong> (1+ month).</p>
+      </div>
+      <div class="method-box">
+        <h5>Quant Anchoring</h5>
+        <p>Product analytics from the Yoga Go data team used to validate participant segmentation and contextualise qual findings against app-level behaviour data.</p>
+      </div>
+    </div>
+
+    <div class="timeline" style="margin-top:3rem;">
+      <div class="tl-item">
+        <div class="tl-label">Week 1</div>
+        <div class="tl-content">
+          <h4>Framing & stakeholder alignment</h4>
+          <p>Research brief co-created with PM and Data leads. Three segments defined. Screener designed to ensure behavioural fidelity, not just claimed behaviour.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-label">Week 2–3</div>
+        <div class="tl-content">
+          <h4>AI-moderated interviews at scale</h4>
+          <p>48 interviews run via Heard in parallel. Thematic synthesis conducted using AI-assisted coding, then human-validated by myself. Segments confirmed.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-label">Week 4</div>
+        <div class="tl-content">
+          <h4>In-depth 1:1 interviews</h4>
+          <p>6 participants selected based on Phase 1 anomalies — users whose behaviour didn't fit the dominant pattern. These yielded the richest insights.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-label">Week 5</div>
+        <div class="tl-content">
+          <h4>Synthesis, prioritisation, delivery</h4>
+          <p>Findings delivered to PM, Design, Lifecycle, and Data as a cross-functional readout. Recommendations ranked by impact and feasibility.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE SPOKE TO -->
+<section>
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label">Participants</p>
+    <h2>Three distinct exit patterns.</h2>
+    <p class="lead">Rather than treating all churned users the same, I segmented by depth of engagement before churn — which revealed fundamentally different failure modes.</p>
+
+    <div class="insight-grid">
+      <div class="insight-card">
+        <div class="ic-icon">🏃</div>
+        <h4>Group 1 · Low-Engaged Casual (40.7%)</h4>
+        <p>Used once or twice, then left. Primary failure: onboarding confusion and unmet first-session expectations. Never reached the core value.</p>
+      </div>
+      <div class="insight-card">
+        <div class="ic-icon">🔄</div>
+        <h4>Group 2 · High-Engaged Casual (33.3%)</h4>
+        <p>Used 3+ times before churning. Primary failure: repetitive content, no progress feedback, no motivation loop. Got to the product but lost the thread.</p>
+      </div>
+      <div class="insight-card">
+        <div class="ic-icon">💪</div>
+        <h4>Group 3 · Power Users (25.9%)</h4>
+        <p>Used consistently for a month or more. Primary failure: no personalisation growth, content ceiling hit. Invested users who felt the product stopped growing with them.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem; background:#fff; border-radius:var(--radius); padding:2rem; border:1px solid var(--border);">
+      <h4 style="margin-bottom:1.5rem; font-size:1rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.07em; font-size:0.75rem;">Age split across all segments</h4>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+        <div>
+          <div style="font-size:1.5rem; font-weight:700; color:var(--wise-green-dark);">21/54</div>
+          <div style="font-weight:600; margin-bottom:0.5rem;">Under 40</div>
+          <p style="font-size:0.875rem; color:var(--text-muted);">Goal-driven, variety-seeking, app-switchers. Motivated by quick results and promotions. More likely to disengage from boredom.</p>
+        </div>
+        <div>
+          <div style="font-size:1.5rem; font-weight:700; color:var(--wise-green-dark);">33/54</div>
+          <div style="font-weight:600; margin-bottom:0.5rem;">Over 40</div>
+          <p style="font-size:0.875rem; color:var(--text-muted);">Holistic wellness goals — mobility, joint health, stress. Often first-time digital fitness app users. Needed structured guidance, felt let down by generic onboarding.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY FINDINGS -->
+<section style="background: var(--surface-2);">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label">Key Findings</p>
+    <h2>Four reasons users left.</h2>
+
+    <div class="insight-grid">
+      <div class="insight-card">
+        <div class="ic-icon">🎯</div>
+        <h4>1. The personalisation gap</h4>
+        <p>Users answered an onboarding quiz but saw no difference in their recommendations. The promise of a personalised app delivered a generic experience. <strong>42/54 users</strong> raised this.</p>
+      </div>
+      <div class="insight-card">
+        <div class="ic-icon">🧭</div>
+        <h4>2. Navigation friction killed momentum</h4>
+        <p>Users couldn't find missed workouts, restart plans, or understand the navigation logic. Confusion after onboarding led to abandonment before value was delivered. <strong>34/54 users</strong> struggled.</p>
+      </div>
+      <div class="insight-card">
+        <div class="ic-icon">🔔</div>
+        <h4>3. No motivation loop</h4>
+        <p>No reminders, no streak tracking, no feedback on progress. Without a pull mechanism, users simply forgot to return. <strong>36/54 users</strong> cited this as a key disengagement driver.</p>
+      </div>
+      <div class="insight-card">
+        <div class="ic-icon">📦</div>
+        <h4>4. Repetitive content ceiling</h4>
+        <p>After a few weeks, workouts felt identical. Power users hit a content ceiling. Casual users got bored before building habit. <strong>30/54 users</strong> cited variety as a need.</p>
+      </div>
+    </div>
+
+    <div class="quote-grid" style="margin-top:3rem;">
+      <div class="quote-card">
+        <blockquote>"After I missed a couple of days, I couldn't figure out how to restart my plan, so I just gave up."</blockquote>
+        <cite>Casual User, Group 1 · Female, 50</cite>
+      </div>
+      <div class="quote-card">
+        <blockquote>"If the app had a way to show me how well I was doing, I would've stuck with it longer."</blockquote>
+        <cite>Casual User, Group 1 · Female, 50</cite>
+      </div>
+      <div class="quote-card">
+        <blockquote>"A quick tutorial on how to navigate the app would have made things much easier."</blockquote>
+        <cite>Casual User, Group 2 · Female, 44</cite>
+      </div>
+      <div class="quote-card">
+        <blockquote>"The workouts weren't designed for someone with arthritis. I needed more modifications."</blockquote>
+        <cite>Power User · Female, 61</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEHAVIOURAL INSIGHT -->
+<div class="dark-band">
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label">Behavioural Science Layer</p>
+    <h2>It wasn't churn. It was expectation violation.</h2>
+    <p class="lead" style="max-width:680px;">Using my PhD background in cognitive psychology, I reframed the findings not as usability failures but as <strong style="color:var(--wise-green);">expectation-reality gaps</strong> — a well-documented trigger for disengagement across consumer behaviour research.</p>
+    <div class="rec-grid" style="margin-top:3rem;">
+      <div class="rec-card">
+        <div class="rc-num">Finding A</div>
+        <h4>Ads created specific mental models</h4>
+        <p>Marketing promised ease, personalisation, and fast results. When the product didn't match, users didn't blame themselves — they blamed the product and left.</p>
+      </div>
+      <div class="rec-card">
+        <div class="rc-num">Finding B</div>
+        <h4>Over-40 users had higher stakes</h4>
+        <p>For older users managing pain, injury, or first-time digital fitness, confusion wasn't minor friction — it was a trust failure. Structural guidance, not just UX polish.</p>
+      </div>
+      <div class="rec-card">
+        <div class="rc-num">Finding C</div>
+        <h4>External disruption is recoverable</h4>
+        <p>Power users who left due to life events (travel, illness) wanted to return — but couldn't find a way back in. The product needed a re-entry ritual, not just new content.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RECOMMENDATIONS -->
+<section>
+  <div style="max-width:1200px; margin:0 auto;">
+    <p class="section-label">Recommendations</p>
+    <h2>What we shipped, and what it changed.</h2>
+
+    <div class="impact-list">
+      <div class="impact-item">
+        <div class="impact-metric">+18%</div>
+        <div class="impact-text">
+          <strong>Onboarding completion rate</strong>
+          <span>Post-quiz recommendations redesigned to visibly connect to user answers. Added explicit first-session path with one clear CTA.</span>
+        </div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-metric">+12%</div>
+        <div class="impact-text">
+          <strong>30-day retention</strong>
+          <span>Reminders, streak tracking, and progress feedback added. Power users given a content progression system.</span>
+        </div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-metric">+15%</div>
+        <div class="impact-text">
+          <strong>Upsell conversion</strong>
+          <span>Insights-to-Action squad (cross-functional: Research, PM, Data, Lifecycle) used findings to redesign the trial-to-paid moment around goal achievement, not time pressure.</span>
+        </div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-metric">+17%</div>
+        <div class="impact-text">
+          <strong>Weekly active users</strong>
+          <span>Lifecycle Marketing used behavioural triggers identified in research to personalise push notification strategy — each segment got messages aligned to their motivation pattern.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I LEARNED -->
+<section style="background: var(--surface-2);">
+  <div style="max-width:1200px; margin:0 auto; max-width:760px;">
+    <p class="section-label">Reflection</p>
+    <h2>What I'd do differently.</h2>
+    <p style="color:var(--text-muted); line-height:1.8; font-size:1.05rem; margin-bottom:1.5rem;">The AI-conducted interviews scaled beautifully for breadth but lost nuance in emotionally loaded moments — particularly around guilt, body image, and disability. I would now design a hybrid protocol where Heard flags emotional markers for human follow-up rather than running both phases separately.</p>
+    <p style="color:var(--text-muted); line-height:1.8; font-size:1.05rem; margin-bottom:1.5rem;">The over-40 segment also emerged as significantly larger and more complex than the brief anticipated. In retrospect, they warranted their own study strand — especially given the accessibility and disability dimension that surfaced late.</p>
+    <p style="color:var(--text-muted); line-height:1.8; font-size:1.05rem;">The cross-functional squad model worked extremely well. Having a PM, a data analyst, and a lifecycle marketer in the synthesis session transformed insight delivery into immediate action planning — and that's what produced the metrics.</p>
+  </div>
+</section>
+
+<div style="display:flex; justify-content:space-between; align-items:center; padding:3rem 4rem; border-top:1px solid var(--border);">
+  <a href="index.html" class="back-btn">← Back to overview</a>
+  <a href="case-study-2.html" style="display:inline-flex; align-items:center; gap:0.5rem; background:var(--wise-navy); color:var(--wise-green); padding:0.75em 1.5em; border-radius:999px; text-decoration:none; font-weight:600; font-size:0.9rem;">Case Study 2 →</a>
+</div>
+
+<footer>
+  <span>Francesca Zaninotto · Design Research Playback · August 2026</span>
+  <span>Staff Researcher Interview · <a href="https://francesca-zaninotto.netlify.app/" target="_blank">Portfolio</a></span>
+</footer>
+
+</body>
+</html>
