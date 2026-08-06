@@ -20,7 +20,7 @@ body {
   background: var(--surface);
   color: var(--text);
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 nav {
@@ -71,8 +71,8 @@ h2 {
   margin-bottom: 1.5rem;
 }
 .lead {
-  font-size: 1.15rem; color: var(--text-muted);
-  max-width: 640px; line-height: 1.75;
+  font-size: 1.25rem; color: var(--text-muted);
+  max-width: 680px; line-height: 1.8;
 }
 
 .cs-hero {
@@ -132,7 +132,7 @@ h2 {
   border-left: 3px solid var(--wise-green-dark);
 }
 .quote-card blockquote {
-  font-size: 1rem; line-height: 1.7; color: var(--text);
+  font-size: 1.1rem; line-height: 1.75; color: var(--text);
   font-style: italic; margin-bottom: 1rem;
 }
 .quote-card cite { font-size: 0.8rem; color: var(--text-muted); font-style: normal; }
@@ -153,8 +153,8 @@ h2 {
   display: flex; align-items: center; justify-content: center;
   font-size: 1.1rem; margin-bottom: 1rem;
 }
-.insight-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
-.insight-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+.insight-card h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+.insight-card p { font-size: 1rem; color: var(--text-muted); line-height: 1.7; }
 
 .timeline { margin: 2.5rem 0; }
 .tl-item {
@@ -171,8 +171,8 @@ h2 {
   background: var(--wise-green-dark);
 }
 .tl-label { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); padding-top: 2px; }
-.tl-content h4 { font-weight: 600; margin-bottom: 0.4rem; }
-.tl-content p { font-size: 0.9rem; color: var(--text-muted); }
+.tl-content h4 { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.4rem; }
+.tl-content p { font-size: 1rem; color: var(--text-muted); }
 
 .impact-list { margin: 2rem 0; }
 .impact-item {
